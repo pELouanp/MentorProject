@@ -1,0 +1,129 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 220px;
+}
+section {
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 40px rgb(187, 220, 236);
+  padding: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 13px;
+}
+footer {
+  margin-top: 300px;
+}
+button {
+  padding: 10px 70px 10px 70px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+button:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+.droite {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.gauche {
+  background: linear-gradient(to bottom, #6549ee, #3615d6);
+  color: white;
+  z-index: 1;
+  border-radius: 15px;
+}
+.note1 {
+  background: rgb(247, 226, 230, 0.4);
+  margin-top: 30px;
+  border-radius: 6px;
+  padding: 5px;
+}
+.note2 {
+  background: rgb(247, 246, 226, 1);
+  margin: 10px 0;
+  border-radius: 6px;
+  padding: 5px;
+}
+.note3 {
+  background: rgb(161, 234, 212, 0.2);
+  border-radius: 6px;
+  padding: 5px;
+}
+.note4 {
+  background: rgb(174, 161, 234, 0.2);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  padding: 5px;
+}
+#rond {
+  background: linear-gradient(to top, #4a2dda, #311d98);
+  display: grid;
+  place-content: center;
+  margin: 2rem auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  line-height: 20px;
+}
+#score {
+  font-size: 50px;
+  font-weight: bold;
+}
+#super {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#result,
+#text {
+  opacity: 0.7;
+}
+#result {
+  font-size: 16px;
+}
+#de {
+  opacity: 0.4;
+}
+#sommaire {
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+}
+.titreNote1 {
+  font-weight: bold;
+  margin-right: 50px;
+  color: hsl(0, 100%, 67%);
+}
+.titreNote2 {
+  font-weight: bold;
+  margin-right: 50px;
+  color: hsl(39, 100%, 56%);
+}
+.titreNote3 {
+  font-weight: bold;
+  margin-right: 50px;
+  color: hsl(166, 100%, 37%);
+}
+.titreNote4 {
+  font-weight: bold;
+  margin-right: 50px;
+  color: hsl(234, 85%, 45%);
+}
+.gras {
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #sommaire {
+    text-align: center;
+  }
+}

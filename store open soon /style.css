@@ -1,0 +1,141 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(bg-pattern-desktop.svg);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h1 {
+  font-size: 60px;
+  letter-spacing: 20px;
+  margin: 150px 0 40px 0;
+  font-weight: 500;
+}
+p {
+  font-size: 14px;
+  line-height: 30px;
+  color: hsl(0, 36%, 70%);
+  opacity: 0.7;
+  word-spacing: 5px;
+}
+button {
+  padding: 15px;
+  background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 50px;
+  border: none;
+  width: 100px;
+  margin-left: -50px;
+  z-index: 2;
+  box-shadow: 0px 0.6px 0.5px rgba(0, 0, 0, 0.02),
+    0px 1.5px 1.3px rgba(0, 0, 0, 0.028), 0px 2.9px 2.4px rgba(0, 0, 0, 0.035),
+    0px 5.1px 4.2px rgba(0, 0, 0, 0.042), 0px 9.6px 7.9px rgba(0, 0, 0, 0.05),
+    0px 23px 19px rgba(0, 0, 0, 0.07);
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+}
+button:active {
+  transform: scale(1);
+}
+form {
+  display: flex;
+  margin-top: 40px;
+}
+#arrow {
+  height: 17px;
+}
+#mobile {
+  display: none;
+}
+#woman {
+  width: 88%;
+  padding-left: 85px;
+}
+.mail {
+  width: 100%;
+  padding: 15px 0 15px 25px;
+  border-radius: 50px;
+  border: 1px hsl(0, 36%, 70%) solid;
+  color: hsl(0, 36%, 70%);
+  opacity: 0.6;
+  z-index: 2;
+}
+#title {
+  color: hsl(0, 36%, 70%);
+  font-weight: 100;
+}
+.error {
+  font-size: 11px;
+  opacity: 0.7;
+  margin: 10px 0 0 25px;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+.errorImg {
+  z-index: 2;
+  margin-left: -130px;
+  display: none;
+}
+.errorBorder {
+  border: 2px hsl(0, 93%, 68%) solid;
+  border-radius: 50px;
+  width: 450px;
+  height: 50px;
+  margin-left: -330px;
+  z-index: 1;
+  display: none;
+}
+.succes {
+  font-size: 11px;
+  opacity: 0.7;
+  margin: 10px 0 0 25px;
+  line-height: 20px;
+  color: hsl(134, 84%, 41%);
+  display: none;
+}
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.gauche {
+  margin: 50px auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+.visible {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #woman {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+  main {
+    text-align: center;
+  }
+  p {
+    line-height: 20px;
+  }
+  #logo {
+    display: flex;
+    width: 120px;
+    margin: -20px 0 30px 30px;
+  }
+}

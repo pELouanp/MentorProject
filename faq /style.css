@@ -1,0 +1,174 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+main {
+  background: white;
+  width: 750px;
+  height: 400px;
+  margin: 200px auto;
+  border-radius: 20px;
+  box-shadow: 0px 5.1px 2.2px rgba(0, 0, 0, 0.02),
+    0px 12.2px 5.3px rgba(0, 0, 0, 0.028), 0px 22.9px 10px rgba(0, 0, 0, 0.035),
+    0px 40.9px 17.9px rgba(0, 0, 0, 0.042),
+    0px 76.5px 33.4px rgba(0, 0, 0, 0.05), 0px 183px 80px rgba(0, 0, 0, 0.07);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  line-height: 30px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1 {
+  font-size: 22px;
+  padding: 30px 0 15px 0;
+}
+.btnPrinc1,
+.btnPrinc2,
+.btnPrinc3,
+.btnPrinc4,
+.btnPrinc5 {
+  display: flex;
+  margin: -22px 0 0 270px;
+  transform: rotate(90deg);
+  border: none;
+  background: white;
+  color: hsl(14, 88%, 65%);
+  font-weight: 900;
+}
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5 {
+  display: flex;
+  margin: -19px 0 0 269px;
+  transform: rotate(270deg);
+  border: none;
+  background: white;
+  color: hsl(14, 88%, 65%);
+  font-weight: 900;
+  display: none;
+}
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  opacity: 0.5;
+}
+.bold {
+  opacity: 1;
+}
+.reponse1,
+.reponse2,
+.reponse3,
+.reponse4,
+.reponse5 {
+  opacity: 0.4;
+  width: 280px;
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 5px;
+  display: none;
+}
+.visible {
+  display: block;
+}
+.question1:hover,
+.question2:hover,
+.question3:hover,
+.question4:hover,
+.question5:hover,
+.btnPrinc:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.attribution {
+  margin-top: 20px;
+}
+hr {
+  margin: 15px 50px 5px 0;
+  opacity: 0.4;
+  width: 300px;
+}
+#first,
+#second,
+#third {
+  position: absolute;
+}
+#first {
+  left: -30px;
+  top: 30px;
+}
+#second {
+  top: 340px;
+  left: 280px;
+  z-index: 1;
+}
+#third {
+  top: 260px;
+  left: 300px;
+}
+@media screen and (max-width: 1350px) {
+  #first {
+    display: none;
+  }
+  #third {
+    left: 200px;
+  }
+  #second {
+    left: 190px;
+    top: 360px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  #third {
+    width: 250px;
+    top: 300px;
+    left: 150px;
+  }
+  #second {
+    width: 100px;
+    top: 370px;
+    left: 130px;
+  }
+  main {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 930px) {
+  #third {
+    top: 50px;
+    left: 300px;
+  }
+  #second {
+    top: 120px;
+    left: 290px;
+  }
+  main {
+    width: 400px;
+  }
+  h1 {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  main {
+    width: 300px;
+    padding-left: 10px;
+    height: 360px;
+  }
+  hr {
+    width: 280px;
+  }
+  #third {
+    left: 60px;
+  }
+  #second {
+    left: 50px;
+  }
+}

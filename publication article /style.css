@@ -1,0 +1,155 @@
+body {
+  background: hsl(210, 46%, 95%);
+}
+main {
+  width: 760px;
+  height: 270px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  font-family: "Manrope", sans-serif;
+  margin: 250px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0.3px 2.2px rgba(0, 0, 0, 0.02),
+    0px 0.8px 5.3px rgba(0, 0, 0, 0.028), 0px 1.5px 10px rgba(0, 0, 0, 0.035),
+    0px 2.7px 17.9px rgba(0, 0, 0, 0.042), 0px 5px 33.4px rgba(0, 0, 0, 0.05),
+    0px 12px 80px rgba(0, 0, 0, 0.07);
+}
+h5 {
+  margin-left: -85px;
+}
+.person {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 12px;
+  width: 450px;
+}
+.droite {
+  margin-left: 40px;
+  padding-top: 10px;
+}
+p {
+  font-size: 12px;
+  opacity: 0.5;
+}
+span {
+  opacity: 0.3;
+  line-height: 20px;
+}
+#imgPrinc {
+  height: 270px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#avatar {
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+#partage {
+  background: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.imgVisible {
+  background: hsl(214, 17%, 51%);
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 15px;
+  position: absolute;
+  top: 446px;
+  left: 1018px;
+  visibility: hidden;
+  cursor: pointer;
+}
+.reseaux {
+  visibility: hidden;
+  display: flex;
+  background: hsl(217, 19%, 35%);
+  color: white;
+  letter-spacing: 5px;
+  gap: 15px;
+  width: 170px;
+  padding: 6px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 370px;
+  left: 920px;
+  box-shadow: 0px 3.6px 2.2px rgba(0, 0, 0, 0.02),
+    0px 8.7px 5.3px rgba(0, 0, 0, 0.028), 0px 16.4px 10px rgba(0, 0, 0, 0.035),
+    0px 29.3px 17.9px rgba(0, 0, 0, 0.042),
+    0px 54.7px 33.4px rgba(0, 0, 0, 0.05), 0px 131px 80px rgba(0, 0, 0, 0.07);
+}
+.share {
+  font-size: 10px;
+}
+.visible {
+  visibility: visible;
+}
+.imgReseaux:active {
+  transform: scale(0.9);
+}
+.imgReseaux:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .imgVisible {
+    margin-left: -210px;
+  }
+  .reseaux {
+    margin-left: -210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imgVisible {
+    margin-left: -330px;
+  }
+  .reseaux {
+    margin-left: -330px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main {
+    grid-template-columns: 1fr;
+    width: 337px;
+    height: 600px;
+    margin-left: 70px;
+  }
+  footer {
+    margin-left: 175px;
+  }
+  #imgPrinc {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  p {
+    width: 250px;
+  }
+  #partage {
+    margin-left: -70px;
+  }
+  .imgVisible {
+    margin-left: -670px;
+    margin-top: 338px;
+  }
+  .reseaux {
+    margin-left: -842px;
+    margin-top: 395px;
+    width: 277px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 75px;
+  }
+  .imgReseaux {
+    height: 20px;
+    margin-top: 28px;
+  }
+  .share {
+    margin-top: 30px;
+    width: 80px;
+  }
+}

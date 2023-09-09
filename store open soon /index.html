@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="gauche">
+        <img id="logo" src="logo.svg" alt="logo site" />
+        <img id="mobile" src="hero-mobile.jpg" alt="woman mobile picture" />
+        <h1>
+          <div id="title">WE'RE <br /></div>
+          COMING <br />
+          SOON
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new <br />fashion
+          store. Add your email below to stay up-to-date with <br />
+          annuncements and our launch deals.
+        </p>
+        <form action="">
+          <input
+            type="email"
+            name="mail"
+            class="mail"
+            placeholder="Email Address"
+          />
+          <button>
+            <img id="arrow" src="icon-arrow.svg" alt="flèche d'envoi" />
+          </button>
+          <img class="errorImg" src="icon-error.svg" alt="icône erreur" />
+          <div class="errorBorder"></div>
+        </form>
+        <div class="error">Please provide a valid email</div>
+        <div class="succes">
+          Congratulation! Your mail address was registered. <br />You will
+          receive a mail notification to confirm your action.
+        </div>
+      </section>
+      <section class="droite">
+        <img id="woman" src="hero-desktop.jpg" alt="woman desktop picture" />
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/pELouanp">pELouanp</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

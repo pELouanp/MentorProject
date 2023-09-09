@@ -1,0 +1,89 @@
+body {
+  background: hsl(30, 38%, 92%);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+}
+button {
+  width: 200px;
+  padding: 10px 0;
+  background: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(1);
+  transition: 0.3s;
+}
+footer {
+  margin-top: 240px;
+}
+img {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.droite {
+  background: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+}
+#sousTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0 20px 0;
+}
+#title {
+  letter-spacing: 4px;
+  font-size: 10px;
+  opacity: 0.5;
+}
+#text {
+  opacity: 0.5;
+  font-size: 14px;
+}
+#price {
+  margin: 25px 0 25px 0;
+  word-spacing: 30px;
+}
+#actual {
+  font-size: 25px;
+  font-weight: bold;
+  color: hsl(159, 80%, 21%);
+}
+#old {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+@media screen and (max-width: 650px) {
+  main {
+    flex-direction: column;
+  }
+  .gauche {
+    background-image: url(image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 266px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .droite {
+    margin-top: -5px;
+    width: 57.5%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  img {
+    display: none;
+  }
+}

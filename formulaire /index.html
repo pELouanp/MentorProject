@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="gauche">
+        <h1>Learn to code by <br />watching others</h1>
+        <p class="text">
+          See how experienced developers solve problems in real-time.
+          <br />Watching scripted tutorials is great, but understanding how
+          <br />developers think is invaluable.
+        </p>
+      </section>
+      <section class="droite">
+        <button class="prenium">
+          Try it free 7 days
+          <span class="grasPrenium">then $20/mo. thereafter</span>
+        </button>
+        <form action="">
+          <input class="first" type="text" placeholder="First Name" />
+
+          <p class="error1">First Name cannot be empty</p>
+          <img class="imgError1" src="icon-error.svg" alt="icône erreur" />
+          <input class="last" type="text" placeholder="Last Name" />
+
+          <p class="error2">Last Name cannot be empty</p>
+          <img class="imgError2" src="icon-error.svg" alt="icône erreur" />
+          <input class="mail" type="email" placeholder="Email Address" />
+
+          <p class="error3">Looks like this is not an email</p>
+          <img class="imgError3" src="icon-error.svg" alt="icône erreur" />
+          <input class="password" type="password" placeholder="Password" />
+
+          <p class="error4">
+            Minimum 8 characters, 1 uppercase, 1 lowercase, 1 number and 1
+            special character
+          </p>
+          <img class="imgError4" src="icon-error.svg" alt="icône erreur" />
+          <button class="envoyer" type="submit">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms">
+            By clicking the button you are agreeing to our
+            <span class="grasTerms">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/pELouanp">pELouanp</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
